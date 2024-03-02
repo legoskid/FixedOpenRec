@@ -147,7 +147,7 @@ namespace api
 					},
 					new Activities.Charades.word
 					{
-						EN_US = "stick of ram",
+						EN_US = "stick of ram", //recroom2016 protogen arc
 						Difficulty = 0
 					},
 					new Activities.Charades.word
@@ -174,8 +174,63 @@ namespace api
 					{
 						EN_US = "angry birds",
 						Difficulty = 0
-					}
-				};
+					},
+					new Activities.Charades.word
+					{
+						EN_US = "Donjamie",
+						Difficulty = 0
+					},
+                    new Activities.Charades.word
+                    {
+                        EN_US = "Lunar",
+                        Difficulty = 0
+                    },
+                    new Activities.Charades.word
+                    {
+                        EN_US = "Spiers",
+                        Difficulty = 0
+                    },
+                    new Activities.Charades.word
+                    {
+                        EN_US = "2016RR",
+                        Difficulty = 0
+                    },
+                    new Activities.Charades.word
+                    {
+                        EN_US = "Kevin the Keen",
+                        Difficulty = 0
+                    },
+                    new Activities.Charades.word
+                    {
+                        EN_US = "Crescendo",
+                        Difficulty = 0
+                    },
+                    new Activities.Charades.word
+                    {
+                        EN_US = "loonar",
+                        Difficulty = 0
+                    },
+					new Activities.Charades.word
+                    {
+                        EN_US = "donjamie",
+                        Difficulty = 0
+                    },
+                    new Activities.Charades.word
+					{
+						EN_US = "I gyatt something in my eye",
+						Difficulty = 0
+					},
+                    new Activities.Charades.word
+                    {
+                        EN_US = "skibidi toilet",
+                        Difficulty = 0
+                    },
+                    new Activities.Charades.word
+                    {
+                        EN_US = "https://discord.gg/WprNck8m7C",
+                        Difficulty = 0
+                    }
+                };
 				return JsonConvert.SerializeObject(value);
 			}
 
