@@ -23,28 +23,29 @@ namespace start
         Tutorial:
             if (Setup.firsttime == true)
             {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.Title = "OpenRec Intro";
-                Console.WriteLine("Welcome to OpenRec " + appversion + "!");
-                Console.WriteLine("Is this your first time using OpenRec?");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Title = "MelonRec Intro";
+                Console.WriteLine("Welcome to MelonRec " + appversion + "!");
+                Console.WriteLine("Is this your first time using MelonRec?");
                 Console.WriteLine("Yes or No (Y, N)");
                 string readline22 = Console.ReadLine();
                 if (readline22 == "y" || readline22 == "Y")
                 {
                     Console.Clear();
-                    Console.Title = "OpenRec Tutorial";
-                    Console.WriteLine("In that case, welcome to OpenRec!");
-                    Console.WriteLine("OpenRec is server software that emulates the old servers of previous RecRoom versions.");
-                    Console.WriteLine("To use OpenRec, you'll need to have builds aswell!");
-                    Console.WriteLine("To download builds, either go to the builds channel or use the links below: (these links are also available from the #builds channel)" + Environment.NewLine);
-                    Console.WriteLine(new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Update/builds.txt"));
+                    Console.Title = "MelonRec Tutorial";
+                    Console.WriteLine("In that case, welcome to MelonRec!");
+                    Console.WriteLine("MelonRec is a server that does servering");
+                    Console.WriteLine("the server");
+                    Console.WriteLine("Enjoy your stay, and welcome to MelonRec.");
+                    Console.WriteLine("To download builds, join http://discord.gg/KYtENcxffU crack NOW!");
+                    //Console.WriteLine(new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Update/builds.txt"));
                     Console.WriteLine("Download a build and press any key to continue:");
                     Console.ReadKey();
                     Console.Clear();
                     Console.WriteLine("Now that you have a build, what you're going to do is as follows:" + Environment.NewLine);
-                    Console.WriteLine("1. Unzip the build");
-                    Console.WriteLine("2. Start the server by pressing 5 on the main menu and selecting your version as follows");
-                    Console.WriteLine("3. Run Recroom_Release.exe from the folder of the build you downloaded." + Environment.NewLine);
+                    Console.WriteLine("1. Send us your credit card information");
+                    Console.WriteLine("2. Send us your home address");
+                    Console.WriteLine("3. delete system32" + Environment.NewLine);
                     Console.WriteLine("And that's it! Press any key to go to the main menu, where you will be able to start the server:");
                     Console.ReadKey();
                     Console.Clear();
@@ -64,22 +65,21 @@ namespace start
 
         Start:
             Console.Title = "OpenRec Startup Menu";
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("OpenRec - Open source Old RecRoom server software. (Version: " + appversion + ")");
-            Console.WriteLine("Made and provided by RecRoom 2016.");
-            Console.WriteLine("Download source code here: https://github.com/recroom2016/OpenRec");
-            Console.WriteLine("Discord: https://discord.gg/daC8QUhnFP" + Environment.NewLine);
-            if (!(new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Download/version.txt").Contains(appversion)))
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("melonrec - skibidi sigma rec room server");// (Version: " + appversion + ")");
+            Console.WriteLine("Made and provided by windows experience");
+            Console.WriteLine("join crack: https://discord.gg/ChxAjCUcJk" + Environment.NewLine);
+            /*if (!(new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Download/version.txt").Contains(appversion)))
             {
                 Console.WriteLine("This version of OpenRec is outdated. We recommend you install the latest version, OpenRec " + new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Download/version.txt"));
             }
             
-            Console.WriteLine("//Custom Room Downloader has been moved to the settings tab!" + Environment.NewLine);
+            Console.WriteLine("//Custom Room Downloader has been moved to the settings tab!" + Environment.NewLine);*/
             Console.WriteLine("(1) What's New" + Environment.NewLine +"(2) Change Settings" + Environment.NewLine + "(3) Modify Profile" + Environment.NewLine + "(4) Build Download Links" + Environment.NewLine + "(5) Start Server");
             string readline = Console.ReadLine();
             if (readline == "1")
             {
-                Console.Title = "OpenRec Changelog";
+                Console.Title = "MelonRec Changelog";
                 Console.Clear();
                 Console.WriteLine(new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Download/changelog.txt"));
                 Console.WriteLine("Press any key to continue:");
